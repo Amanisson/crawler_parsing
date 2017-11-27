@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumDriver {
 
-    private String myEmail = "starscrime@mail.ru";
-    private String myPass = "28sigidu";
-    private String CLIENT_SECRET = "ZOK0Y95l3tZtvzS6ne5t";
+    private String myEmail = "***************";
+    private String myPass = "************";
+    private String CLIENT_SECRET = "********************";
 
     public String getConnection(){
 
@@ -22,7 +22,7 @@ public class SeleniumDriver {
                 "response_type=code&" +
                 "v=5.69";
 
-        System.setProperty("webdriver.chrome.driver", "/home/amanisson/SoftWare/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/*******/*********/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get(getAuthUrl);
 
@@ -42,7 +42,7 @@ public class SeleniumDriver {
         System.out.println("code = " + code);
 
         String getTokenUrl = "https://oauth.vk.com/access_token?" +
-                "client_id=6233942" +
+                "client_id=**********" +
                 "&client_secret="+ CLIENT_SECRET +
                 "&redirect_uri=https://oauth.vk.com/blank.html" +
                 "&code=" + code;
